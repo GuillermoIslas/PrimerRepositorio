@@ -10,7 +10,12 @@
     font-family: "Jost-Medium";
     src: url("../fonts/Jost-Medium.ttf");
 }
-
+.img-num1:hover, .img-num2:hover, .img-num3:hover, .img-num4:hover, .img-num5:hover, .img-num6:hover, .img-num7:hover, .img-num8:hover, .img-num9:hover, .img-num10:hover{
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
 .topnav{
     display: flex;
     justify-content: space-between;
@@ -107,7 +112,7 @@
     padding: 50px;
     margin: 10px;
 }
-.Estilo, .lugar, .hora{
+.Estilo, .lugar, .hora, .num1, .num2, .num3, .num4, .num5, .num6, .num7, .num8, .num9, .num10{
     background-color: whitesmoke;
     box-shadow: 2px 3px 7px 0 rgba(0,0,0,.2);
     padding: 5px;
@@ -285,6 +290,12 @@ form{
     box-shadow: 5px 7px 10px 0 rgba(0,0,0,.2);
     max-width: 992px;
     align-items: center;
+    transition: 0.2s;
+}
+.cera:hover, .shampoo:hover, .kerastase:hover, .spray:hover, .apliques:hover, .planchita:hover, .secador:hover, .afeitadora:hover, .num1:hover, .num2:hover, .num3:hover, .num4:hover, .num5:hover, .num6:hover, .num7:hover, .num8:hover, .num9:hover, .num10:hover{
+    box-shadow: 6px 8px 10px 0 rgba(0,0,0,.2);
+    padding: 9px;
+    margin: 4px;
 }
 
 /*Media Queries*/
