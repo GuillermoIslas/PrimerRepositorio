@@ -10,15 +10,69 @@
     font-family: "Jost-Medium";
     src: url("../fonts/Jost-Medium.ttf");
 }
+.container{
+    padding-top: 50px;
+}
+.background1{
+    background-image:  url(../img/proyect1-modified.png);
+    height: 750px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.background-registro, .background-recomendar{
+    background-color: rgb(22, 22, 22);
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.background-tienda, .background-top10{
+    background-color: rgb(22, 22, 22);
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+.background-recomendar{
+    text-align: center;
+}
+.dropdown{
+    text-align: center;
+}
+.topnav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.menu a{
+    font-family: 'Jost-Medium', Jost-Medium;
+    font-size: 15px;
+    color: white;
+    margin: 20px;
+    border: 10px;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: black;
+    margin: 10px;
+    border: 10px solid whitesmoke;
+    background-color:whitesmoke ;
+    box-shadow: 8px whitesmoke;
+
+} 
+.parrafo{
+    font-size: 35px;
+    color: white;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+}
 .img-num1:hover, .img-num2:hover, .img-num3:hover, .img-num4:hover, .img-num5:hover, .img-num6:hover, .img-num7:hover, .img-num8:hover, .img-num9:hover, .img-num10:hover{
     -webkit-transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
     transform: rotateY(180deg);
     transform-style: preserve-3d;
-}
-.topnav{
-    display: flex;
-    justify-content: space-between;
 }
 /*Imagen peluquería + texto*/
 .imagen{
@@ -38,38 +92,22 @@
     width: 200px;
     height: 150px;
 }
-
-/*Buscador + párrafo*/
-.txt{
-    position: absolute;
+.registrarahora{
+    text-align: center;
 }
+/*Buscador + párrafo*/
+
 /*Buscador*/
 .texto{
     list-style: none;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
 }
 .texto li{
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin: auto;
-    width: 180px;
-    padding: 40px;
-}
-.texto a{
-        font-family: 'Jost-Medium', Jost-Medium;
-        font-size: 15px;
-        color: white;
-        margin: auto;
-        border: 10px solid rgb(43, 42, 42);
-        background-color: rgb(43, 42, 42);
-        text-align: center;
-        list-style: none;
-        text-decoration: none;
-        transition:0.2s;
-}
-.texto a:hover{
-    box-shadow: 5px 7px 10px 0 rgba(0,0,0,.2);
-    border: 12px solid rgb(43, 42, 42);
-
 }
 .registrartext{
     text-align: center;
@@ -80,12 +118,7 @@
     padding: 5px;
     margin: 5px;
 }
-.parrafo{
-    font-size: 35px;
-    font-family: 'Jost-Medium', Jost-Medium;
-    color: black;
-    text-align: left;
-}
+
 .menu{
     display: flex;
     list-style: none;
@@ -101,102 +134,66 @@
     grid-column-gap: 100px;
     text-align: center;
     list-style: none;
-    padding: 50px;
+    padding: 100px;
 }
-.toplugares{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 100px;
+.peluqueria{
+    color: white;
+}
+.qr{
+    width: 400px;
+    height: 250px;
+}
+.codigoqr{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.background2{
+    background-color: whitesmoke;
+}
+.agendate{
     text-align: center;
-    list-style: none;
-    padding: 50px;
-    margin: 10px;
 }
 .Estilo, .lugar, .hora, .num1, .num2, .num3, .num4, .num5, .num6, .num7, .num8, .num9, .num10{
-    background-color: whitesmoke;
-    box-shadow: 2px 3px 7px 0 rgba(0,0,0,.2);
     padding: 5px;
     transition: 0.2s;
     margin: 8px;
 }
 .Estilo:hover, .lugar:hover, .hora:hover{
-    box-shadow: 6px 8px 10px 0 rgba(0,0,0,.2);
+    box-shadow: 6px 8px 10px 0 silver;
     padding: 9px;
     margin: 4px;
-
 }
 h1{
     font-family: 'Fahion', Fashion;
     color: white;
-    font-size: 40px;
-    margin-left: 20px;
-    text-shadow: 2px 2px 2px gray;
-
-}
-.menu li{
-    margin-top: 25px;
-    padding: 5px;
-}
-.menu a{
-    font-family: 'Jost-Medium', Jost-Medium;
-    font-size: 15px;
-    color: black;
-    margin: 10px;
-    width: 180px;
-    border: 10px solid whitesmoke;
-    background-color: whitesmoke;
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
-    box-shadow: 2px 2px 2px 0 rgba(0,0,0,.2);
-    transition:0.2s;
-}
-.menu a:hover{
-    margin: 8px;
-    border: 12px solid whitesmoke;
-    box-shadow: 5px 7px 10px 0 rgba(0,0,0,.2);
-}
-.mail, .contraseña, .submit, .nombre, .number, .email, .buscando, .mensaje, .noticias, .enviar{
-    padding: 5px;
+    font-size: 50px;
+    padding: 10px;
 }
 footer{
-    margin-top: 50px;
-}
-.servicios, .toplugares, .compra, .comodo, .gestiona, .crece, .iniciar{
-    font-family: 'Jost-Medium', Jost-Medium;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    color: white;
 }
 .toplugares1{
     text-align: center;
     font-family: 'Jost-Medium', Jost-Medium;
     font-size: 30px;
+    color: white;
 }
-.background{
-    background: url(../img/image.jpg);
-    padding: 0%;
-    margin: 0%;
-    border: 0%;
-}
-body{
-    background:url(../img/Silver-Wallpaper.jpg)
+.toplugares{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
 }
 .body1{
     margin: 0;
     padding: 0;
 }
-
 /* Registrar tu salón*/
 .organiza, .queremos, .registrartexto{
     text-align: center;
-    font-family: 'Jost-Medium', Jost-Medium;
-
-}
-.registra{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-column-gap: 100px;
-    text-align: center;
-    list-style: none;
-    padding: 50px;
 }
 .gestionate, .comodidad, .crecimiento{
     width: 150px;
@@ -216,71 +213,22 @@ form{
     flex-direction: column;
     align-items: center;
 }
-.recomienda{
-    font-family: 'Jost-Medium', Jost-Medium;
-}
-.nombre, .number, .email, .buscando, .mensaje, .enviar{
-    font-family: 'Jost-Medium', Jost-Medium;
-    font-size: 15px;
-    color: black;
-    margin: 10px;
-    width: 300px;
-    border-left: 100px solid whitesmoke;
-    border-right: 100px solid whitesmoke;
-    background-color: whitesmoke;
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
-    box-shadow: 5px 7px 10px 0 rgba(0,0,0,.2);
-    align-items: center;
-}
-.enviar{
-    font-family: 'Jost-Medium', Jost-Medium;
-    font-size: 15px;
-    color: black;
-    margin: 10px;
-    width: 180px;
-    border-left: 50px solid whitesmoke;
-    border-right: 50px solid whitesmoke;
-    background-color: whitesmoke;
-    text-align: center;
-    list-style: none;
-    text-decoration: none;
-    box-shadow: 5px 7px 10px 0 rgba(0,0,0,.2);
-    align-items: center; 
-}
-.recomienda{
-    text-align: center;
-}
-.send{
-    border: 0;
-    padding: 0;
-}
 
+.recomienda{
+    text-align: center;
+}
 /*Tienda*/
 .productos, .cuidado, .artefactos, .mejores{
     font-family:'Jost-Medium', Jost-Medium;
     padding: 25px;
     text-align: center;
+    color: white;
 }
 .img-cera, .img-shampoo, .img-kerastase, .img-spray, .img-apliques, .img-planchita, .img-secador, .img-afeitadora, .img-num1, .img-num2, .img-num3, .img-num4, .img-num5, .img-num6, .img-num7, .img-num8, .img-num9, .img-num10{
     width: 150px;
     height: 150px;
 }
-.productoscuidado, .artefactoscabello{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-column-gap: 100px;
-    font-family:'Jost-Medium', Jost-Medium;
-    align-items: center;   
-}
-.top{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-column-gap: 50px;
-    font-family:'Jost-Medium', Jost-Medium;
-    align-items: center;
-}
+
 .cera, .shampoo, .kerastase, .spray, .apliques, .planchita, .secador, .afeitadora, .num1, .num2, .num3, .num4, .num5, .num6, .num7, .num8, .num9, .num10{
     margin: 10px;
     width: 180px;
@@ -297,105 +245,13 @@ form{
     padding: 9px;
     margin: 4px;
 }
-
-/*Media Queries*/
-@media screen and (max-width:700px){
-    .toplugares{
-        display: grid;
-        grid-template-columns: auto;
-        grid-column-gap: 100px;
-        text-align: center;
-        list-style: none;
-        padding: 50px;
-    }
-    .topnav{
-            display: grid;
-            grid-template-columns: auto auto;
-            grid-row-gap: 40px;
-            text-align: center;
-            list-style: none;
-            padding: 20px;
-    }
-    .menu{
-        flex-direction: column ; 
- 
-    }
-    h1{
-        font-size: 40px;
-        text-align: center;
-    }
-    .texto{
-        flex-direction: column;
-        row-gap: 10px; 
-    }
-    .parrafo{
-        font-size: 25px;
-        font-family: 'Jost-Medium', Jost-Medium;
-        color: black;
-        text-align: center;
-
-    }
-    .servicios, .registra, .productoscuidado, .artefactoscabello, .top{
-        display: grid;
-        grid-template-columns: auto;
-        grid-row-gap: 100px;
-        text-align: center;
-        list-style: none;
-        padding: 50px;
-    }
-    .img{
-        width: 730px;
-        height: 500px;
+.mensaje{
+    padding-top: 20px;
 }
-    }
-    .nombre, .number, .email, .buscando, .mensaje, .enviar{
-        border-left: 20px solid whitesmoke;
-        border-right: 20px solid whitesmoke;
-}
-
-
-@media screen and (min-width:701px) and (max-width:1300px){
-    .toplugares, .productoscuidado, .artefactoscabello, .top{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-column-gap: 100px;
-        text-align: center;
-        list-style: none;
-        padding: 50px;
-    }
-    .topnav{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-row-gap: 100px;
-        text-align: center;
-        list-style: none;
-        padding: 50px;
-    }
+@media (max-width:900px){
     .menu{
-        flex-direction: column ; 
-    }
-    h1{
-        font-size: 100px;
-        text-align: center;
-    }
-    .texto{
+        display: flex;
         flex-direction: column;
-        row-gap: 10px; 
     }
-    .parrafo{
-        font-size: 25px;
-        font-family: 'Jost-Medium', Jost-Medium;
-        color: black;
-        text-align: center;
-
-    }
-    .servicios{
-        display: grid;
-        grid-template-columns: auto;
-        grid-row-gap: 100px;
-        text-align: center;
-        list-style: none;
-        padding: 50px;
-    }
+}
     
-}
