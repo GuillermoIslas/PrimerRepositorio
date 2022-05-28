@@ -14,16 +14,31 @@
 <body>
     <div class="background1">
         <header class="topheader">
-        <nav class="topnav">
-            <h1>SALON</h1>  
-            <ul class="menu">
-                <li class="index"><a href="index.html" class="index-link">INICIO</a></li>
-                <li class="registro"><a href="pages/registro.html" class="registro-link">REGISTRÁ TU SALÓN</a></li>
-                <li class="recomendar"><a href="pages/recomendar.html" class="recomendar-link">RECOMENDÁ UN SALÓN</a></li>
-                <li class="tienda"><a href="pages/tienda.html" class="tienda-link">TIENDA</a></li>
-                <li class="top10"><a href="pages/top10.html">TOP10</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark">
+                <a href="#" class="navbar-brand">SALON</a>
+                <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#toggleMobileMenu"
+                aria-controls="#toggleMobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="index"><a href="index.html" class="nav-link">INICIO</a></li>
+                        <li class="registro"><a href="pages/registro.html" class="nav-link">REGISTRÁ TU SALÓN</a></li>
+                        <li class="recomendar"><a href="pages/recomendar.html" class="nav-link">RECOMENDÁ UN SALÓN</a></li>
+                        <li class="tienda"><a href="pages/tienda.html" class="nav-link">TIENDA</a></li>
+                        <li class="top10"><a href="pages/top10.html" class="nav-link">TOP10</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         </header>
         <main>
         <div class="txt">
@@ -59,22 +74,29 @@
     </div>
         <div class="background2">
             <div class="container">
+                <div class="servicios">
             <div class="row">
                 <div class="col-md-4 col-xs-12 text-center">
+                    <div class="que">
                     <h3>¿Qué te vas a hacer?</h3>
-                    <img src="https://st3.depositphotos.com/9357398/18423/v/600/depositphotos_184230210-stock-illustration-man-and-woman.jpg" alt="" class="img2">
+                    <img src="https://i.pinimg.com/originals/d2/5e/94/d25e94c7398892f60aa512ec2d87fa60.png" alt="" class="img2">
                     <p>Decinos cómo te vas a cortar o elegí entre todas las opciones que tenemos para vos</p>
+                    </div>
                 </div>
                 <div class="col-md-4 col-xs-12 text-center">
+                    <div class="donde">
                     <h3>Donde te quede mejor</h3>               
-                    <img src="https://i.pinimg.com/originals/bb/1a/e7/bb1ae7bd053d740dea87e5b09628c77f.png" alt="" class="img3">
-                    <p>Descubrí las mejores peluquerías de tu zona o encontrá a tu peluquero de confienza</p>
+                    <img src="https://icons-for-free.com/download-icon-location-131964743694813332_0.svg" alt="" class="img3">
+                    <p>Descubrí las mejores peluquerías de tu zona o encontrá a tu peluquero de confianza</p>
+                    </div>
                 </div>
                 <div class="col-md-4 col-xs-12 text-center">
+                    <div class="hora">
                     <h3>A la hora que puedas</h3>
                         <img src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png" alt="" class="img4">
-                        <p>Agendate en el día de la semana y en el horario que más te convenga</p>
+                        <p>Agendate en el día de la semana y en el horario que más te convenga, según la disponibilidad de tu peluquero</p>
                 </div>
+            </div>
             </div>
             </div>
                 <div class="container">
