@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Fashion";
+    src: url("../fonts/Fashion.ttf");
+}
+@font-face {
+    font-family:"fashi954";
+    src: url("../fonts/fashi954.ttf");
+}
+@font-face {
+    font-family: "Jost-Medium";
+    src: url("../fonts/Jost-Medium.ttf");
+}
+.topheader{
+    padding-top: 10px;
+}
+/*INDEX*/
+.background2{
+    padding-top: 50px;
+}
+.background1{
+    background-image:  url(../img/proyect1-modified.png);
+    height: 700px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.que, .hora, .donde{
+    margin: 10px;
+    border: 20px solid white;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.que:hover, .hora:hover, .donde:hover{
+    box-shadow: 8px 10px 12px 0 rgba(0,0,0,.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.parrafo{
+    font-size: 35px;
+    color: white;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.texto{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+}
+.texto li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+.toplugares1{
+    text-align: center;
+    font-family: 'Jost-Medium', Jost-Medium;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 30px;
+}
+.toplugares{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+}
+.background-registro, .background-recomendar{
+    background-color: rgb(22, 22, 22);
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding-bottom: 90px;
+}
+.background-tienda, .background-top10{
+    background-color: rgb(22, 22, 22);
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+.background-recomendar{
+    text-align: center;
+}
+.dropdown{
+    text-align: center;
+}
+.servicios{
+    padding-bottom: 25px;
+}
+.peluqueria{
+    color: white;
+    box-shadow: 2px 5px 7px 0 whitesmoke;
+    transition: 0.2s;
+}
+.peluqueria:hover{
+    box-shadow: 5px 7px 10px 0 whitesmoke;
+}
+.qr{
+    width: 400px;
+    height: 250px;
+    transition: 0.4s;
+}
+.qr:hover{
+-webkit-transform: scale(1.2);
+-ms-transform: scale(1.2);
+transform: scale(1.2);
+}
+.codigoqr{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.agendate{
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+/*Imagen peluquería + texto*/
+.imagen{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+/*Imagen peluquería*/
+.img{
+    width: 1350px;
+    height: 800px;
+    opacity: 0.35;
+    box-shadow: 5px 7px 10px 0 rgba(0,0,0,.2);
+}
+/*Otras imagenes*/
+.img2, .img3, .img4, .img5, .img6, .img7, .img8{
+    width: 200px;
+    height: 150px;
+}
+.registrarahora{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.registrartext{
+    text-align: center;
+}
+.num1, .num2, .num3, .num4, .num5, .num6, .num7, .num8, .num9, .num10{
+    padding: 5px;
+    transition: 0.2s;
+    margin: 8px;
+    color: white;
+    box-shadow: 2px 5px 7px 0 whitesmoke;
+
+}
+.navbar-brand{
+    font-family: 'Fahion', Fashion;
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+}
+footer{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+/* Registrar tu salón*/
+.organiza, .queremos, .registrartexto{
+    text-align: center;
+}
+.gestionate, .comodidad, .crecimiento{
+    width: 150px;
+    height: 110px;
+}
+h5{
+    font-size: 20px;
+}
+.organiza{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.queremos{
+    padding-bottom: 30px;
+}
+/*Tienda*/
+.productos, .cuidado, .artefactos, .mejores{
+    font-family:'Jost-Medium', Jost-Medium;
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+.img-cera, .img-shampoo, .img-kerastase, .img-spray, .img-apliques, .img-planchita, .img-secador, .img-afeitadora, .img-num1, .img-num2, .img-num3, .img-num4, .img-num5, .img-num6, .img-num7, .img-num8, .img-num9, .img-num10{
+    width: 150px;
+    height: 150px;
+}
+
+.cera, .shampoo, .kerastase, .spray, .apliques, .planchita, .secador, .afeitadora{
+    margin: 10px;
+    width: 180px;
+    border: 10px solid whitesmoke;
+    background-color: whitesmoke;
+    text-align: center;
+    box-shadow: 5px 7px 10px 0 rgba(0,0,0,.2);
+    max-width: 992px;
+    align-items: center;
+    transition: 0.2s;
+}
+.cera:hover, .shampoo:hover, .kerastase:hover, .spray:hover, .apliques:hover, .planchita:hover, .secador:hover, .afeitadora:hover, .num1:hover, .num2:hover, .num3:hover, .num4:hover, .num5:hover, .num6:hover, .num7:hover, .num8:hover, .num9:hover, .num10:hover{
+    box-shadow: 8px 10px 12px 0 rgba(0,0,0,.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.mensaje{
+    padding-top: 20px;
+}
+@media screen and (max-width:768px){
+    .parrafo{
+        font-size: 25px;
+    }
+    .background1{
+        height: 850px;
+    }
+}
+@media screen and (max-width:632px){
+    .parrafo{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:400px){
+    .parrafo{
+        font-size: 12px;
+    }
+}

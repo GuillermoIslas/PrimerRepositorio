@@ -1,0 +1,137 @@
+@import "header";
+@import "footer";
+@import "variables";
+/*Primer background*/
+.background1{
+    background-image:  url(../img/proyect1-modified.png);
+    height: 700px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+.navbar-brand{
+    font-family: 'Fahion', Fashion;
+    color: white;
+    font-size: 50px;
+    padding: 10px;
+}
+.texto{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+
+    li{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: auto;
+    }
+}
+p:first-child{
+    font-size: 35px;
+    color: white;
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/*Segundo background*/
+.background2{
+    padding-top: 50px;
+}
+.servicios{
+    padding-bottom: 25px;
+    img{
+        width: $widthImagen;
+        height: $heightImagen;
+    }  
+}
+.que, .hora, .donde{
+    margin: 10px;
+    border: 20px solid white;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.que:hover, .hora:hover, .donde:hover{
+    box-shadow: 8px 10px 12px 0 rgba(0,0,0,.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.agendate{
+    padding-bottom: 30px;
+    text-align: center;
+}
+.codigoqr{
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+    img{
+        width: 400px;
+        height: 250px;
+        transition: 0.4s;
+    }
+    img:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        }
+}
+.background3{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+
+    img{
+        width: $widthImagen;
+        height: $heightImagen;
+    }
+    h3:first-child{
+        text-align: center;
+        font-size: 30px;
+        color: white;
+        padding-bottom: 30px;
+    }
+    .peluqueria{
+        color: white;
+        box-shadow: 2px 5px 7px 0 whitesmoke;
+        transition: 0.2s;
+    }
+    .peluqueria:hover{
+        box-shadow: 5px 7px 10px 0 whitesmoke;
+    }
+}
+@media (min-width:765px) and (max-width:1000px){
+    .codigoqr img{
+        width: 350px;
+        height: 220px;
+    }
+}
+
+@media (min-width:633px) and (max-width:764px){
+    p:first-child{
+        font-size: 25px;
+    }
+    .background1{
+        height: 850px;
+    }
+}
+@media (min-width:401px) and (max-width:640px) {
+    p:first-child{
+        font-size: 16px;
+    }
+    .background1{
+        height: 850px;
+    }
+}
+@media (max-width:400px){
+    p:first-child{
+        font-size: 14px;
+    }
+    .background1{
+        height: 850px;
+    }
+}
