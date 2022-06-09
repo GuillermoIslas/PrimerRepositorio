@@ -1,12 +1,36 @@
 @import "header";
 @import "footer";
 @import "variables";
+@import "mixins";
+
+/*Colores para los backgrounds*/
+$color1:whitesmoke;
+$color2:rgb(22, 22, 22);
+
+/*Breakpoints para los Media Queries*/
+$sm:480px;
+$md:768px;
+$lg:1024px;
+$xl:1200px;
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+main {
+    flex-grow: 1;
+}
+
+header, main, footer {
+    flex-shrink: 0;
+}
+
+/*INDEX*/
 /*Primer background*/
 .background1{
     background-image:  url(../img/proyect1-modified.png);
     height: 700px;
     width: 100%;
-    background-color: rgba(0,0,0,0.6);
 }
 .navbar-brand{
     font-family: 'Fahion', Fashion;
@@ -36,6 +60,7 @@ p:first-child{
 
 /*Segundo background*/
 .background2{
+    background-color: $color1;
     padding-top: 50px;
 }
 .servicios{
@@ -46,10 +71,10 @@ p:first-child{
     }  
 }
 .que, .hora, .donde{
+    @include flex;
     margin: 10px;
-    border: 20px solid white;
-    background-color: white;
-    text-align: center;
+    border: 20px solid $color1;
+    background-color: $color1;
     align-items: center;
     transition: 0.5s;
 }
@@ -61,7 +86,7 @@ p:first-child{
 }
 .agendate{
     padding-bottom: 30px;
-    text-align: center;
+    @include flex;
 }
 .codigoqr{
     padding-top: 40px;
@@ -79,18 +104,16 @@ p:first-child{
         }
 }
 .background3{
-    padding-top: 60px;
-    padding-bottom: 60px;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(22, 22, 22);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: $color2;
 
     img{
         width: $widthImagen;
         height: $heightImagen;
     }
     h3:first-child{
-        text-align: center;
+        @include flex;
         font-size: 30px;
         color: white;
         padding-bottom: 30px;
@@ -104,13 +127,108 @@ p:first-child{
         box-shadow: 5px 7px 10px 0 whitesmoke;
     }
 }
+
+/*RECOMENDAR UN SALON*/
+.background-recomendar{
+    color: white;
+    padding-bottom: 50px;
+}
+.recomienda{
+    @include flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*REGISTRAR SALÓN*/
+.background-registro{
+    padding-bottom: 50px;
+}
+.organiza, .queremos, .registrartexto{
+    text-align: center;
+}
+.gestionate, .comodidad, .crecimiento{
+    width: 150px;
+    height: 110px;
+}
+h5{
+    font-size: 20px;
+}
+.organiza{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+.queremos{
+    padding-bottom: 30px;
+}
+.registrarahora{
+    text-align: center;
+    padding-top: 30px;
+}
+/*TIENDA*/
+.productos, .cuidados, .artefactos, .mejores{
+    @include flex;
+    padding: 25px;
+    color: black;
+}
+.img-cuidado, .img-artefacto{
+    width: 150px;
+    height: 150px;
+}
+.cuidado, .artefacto{
+    @include flex;
+    margin: 10px;
+    width: 180px;
+    border: 10px solid $color1;
+    background-color: $color1;
+    max-width: 992px;
+    align-items: center;
+    transition: 0.2s;
+}
+.artefacto:hover, .cuidado:hover{
+    box-shadow: 8px 10px 12px 0 rgba(0,0,0,.2);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+/*TOP10*/
+.img-top{
+    width: 150px;
+    height: 150px;
+}
+.top{
+    @extend.cuidado;
+    border: 10px solid $color2;
+    background-color: $color2;
+}
+.top:hover{
+    @extend.cuidado:hover;
+    box-shadow: 4px 6px 8px 0 whitesmoke;
+}
+.background-top10{
+    color: white;
+}
+.mejores{
+    padding: 25px;
+    @include flex;
+    color: white;
+}
+
+/*Mapa de backgrounds*/
+$coloresBackground:(background-registro:whitesmoke, background-recomendar:rgb(22, 22, 22), background-tienda:whitesmoke, background-top10:rgb(22, 22, 22));
+
+@each $background,
+$color in $coloresBackground{
+    .#{$background}{
+        background-color: $color;
+    }
+}
+
 @media (min-width:765px) and (max-width:1000px){
     .codigoqr img{
         width: 350px;
         height: 220px;
     }
 }
-
 @media (min-width:633px) and (max-width:764px){
     p:first-child{
         font-size: 25px;
