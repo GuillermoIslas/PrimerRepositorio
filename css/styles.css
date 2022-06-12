@@ -186,6 +186,10 @@ h5 {
   text-align: center;
   color: white; }
 
+footer {
+  background-color: black;
+  color: white; }
+
 /*Mapa de backgrounds*/
 .background-registro {
   background-color: whitesmoke; }
@@ -199,6 +203,7 @@ h5 {
 .background-top10 {
   background-color: #161616; }
 
+/*MEDIA QUERIES*/
 @media (min-width: 765px) and (max-width: 1000px) {
   .codigoqr img {
     width: 350px;
@@ -210,14 +215,22 @@ h5 {
   .background1 {
     height: 850px; } }
 
-@media (min-width: 401px) and (max-width: 640px) {
+@media (min-width: 401px) and (max-width: 632px) {
   p:first-child {
     font-size: 16px; }
   .background1 {
     height: 850px; } }
 
-@media (max-width: 400px) {
+@media (min-width: 321px) and (max-width: 400px) {
   p:first-child {
     font-size: 14px; }
   .background1 {
-    height: 850px; } }
+    height: 850px; }
+  .codigoqr img {
+    width: 300px;
+    height: 200px; } }
+
+@media (max-width: 320px) {
+  .codigoqr img {
+    width: 250px;
+    height: 150px; } }
