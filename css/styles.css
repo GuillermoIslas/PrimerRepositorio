@@ -27,16 +27,6 @@ header, main, footer {
   font-size: 50px;
   padding: 10px; }
 
-.texto {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding-top: 60px; }
-  .texto li {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: auto; }
-
 p:first-child {
   font-size: 35px;
   color: white;
@@ -44,34 +34,50 @@ p:first-child {
   padding-left: 100px;
   padding-right: 100px; }
 
+.servicios {
+  color: white;
+  margin: 40px;
+  padding-bottom: 25px;
+  padding-top: 45px; }
+  .servicios img {
+    width: 130px;
+    height: 120px; }
+
+.servicios_element, .top10_element {
+  text-align: center;
+  margin: 10px;
+  align-items: center;
+  transition: 0.5s; }
+
+.servicios_element:hover, .top10_element:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2); }
+
 /*Segundo background*/
 .background2 {
   background-color: whitesmoke;
   padding-top: 50px; }
 
-.servicios {
-  padding-bottom: 25px; }
-  .servicios img {
-    width: 200px;
-    height: 150px; }
-
-.que, .hora, .donde {
-  text-align: center;
-  margin: 10px;
-  border: 20px solid whitesmoke;
-  background-color: whitesmoke;
-  align-items: center;
-  transition: 0.5s; }
-
-.que:hover, .hora:hover, .donde:hover {
-  box-shadow: 8px 10px 12px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2); }
-
-.agendate {
-  padding-bottom: 30px;
+.agendate, .paga {
+  padding-top: 40px;
+  padding-bottom: 20px;
   text-align: center; }
+
+.btn-agenda, .btn-paga, .btn-registra {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+  background-color: whitesmoke;
+  transition: 0.2s; }
+
+.btn-paga, .btn-registra {
+  background-color: black;
+  color: white; }
+
+.btn-agenda:hover, .btn-paga:hover, .btn-registra:hover, .btn-registra:hover {
+  background-color: white; }
 
 .codigoqr {
   padding-top: 40px;
@@ -90,19 +96,24 @@ p:first-child {
   padding-bottom: 100px;
   background-color: #161616; }
   .background3 img {
-    width: 200px;
-    height: 150px; }
+    width: 130px;
+    height: 120px; }
   .background3 h3:first-child {
     text-align: center;
     font-size: 30px;
     color: white;
     padding-bottom: 30px; }
   .background3 .peluqueria {
-    color: white;
-    box-shadow: 2px 5px 7px 0 whitesmoke;
-    transition: 0.2s; }
-  .background3 .peluqueria:hover {
-    box-shadow: 5px 7px 10px 0 whitesmoke; }
+    color: white; }
+    .background3 .peluqueria img {
+      width: 100px;
+      height: 60px; }
+  .background3 .peluqueria_element {
+    padding: 30px;
+    text-align: center;
+    margin: 10px;
+    align-items: center;
+    background-color: #252525; }
 
 /*RECOMENDAR UN SALON*/
 .background-recomendar {
@@ -141,42 +152,47 @@ h5 {
   padding-top: 30px; }
 
 /*TIENDA*/
-.productos, .cuidados, .artefactos, .mejores {
+.productos, .mejores, .cuidados, .artefactos {
   text-align: center;
-  padding: 25px;
+  padding-top: 25px;
   color: black; }
 
 .img-cuidado, .img-artefacto {
   width: 150px;
   height: 150px; }
 
-.cuidado, .top, .artefacto {
+.cuidado, .artefacto {
+  color: black;
+  margin: 40px;
+  padding-bottom: 25px;
+  padding-top: 45px; }
+  .cuidado img, .artefacto img {
+    width: 130px;
+    height: 120px; }
+
+.cuidado_element, .artefacto_element {
   text-align: center;
   margin: 10px;
-  width: 180px;
-  border: 10px solid whitesmoke;
-  background-color: whitesmoke;
-  max-width: 992px;
   align-items: center;
-  transition: 0.2s; }
+  transition: 0.5s; }
 
-.artefacto:hover, .cuidado:hover, .top:hover {
-  box-shadow: 8px 10px 12px 0 rgba(0, 0, 0, 0.2);
+.cuidado_element:hover, .artefacto_element:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2); }
 
 /*TOP10*/
-.img-top {
-  width: 150px;
-  height: 150px; }
-
 .top {
-  border: 10px solid #161616;
-  background-color: #161616; }
+  color: white;
+  margin: 40px;
+  padding-bottom: 25px;
+  padding-top: 45px; }
+  .top img {
+    width: 130px;
+    height: 120px; }
 
-.top:hover {
-  box-shadow: 4px 6px 8px 0 whitesmoke; }
+.top10_element {
+  padding: 10px; }
 
 .background-top10 {
   color: white; }
@@ -185,6 +201,9 @@ h5 {
   padding: 25px;
   text-align: center;
   color: white; }
+
+main {
+  padding-bottom: 50px; }
 
 footer {
   background-color: black;
@@ -204,33 +223,65 @@ footer {
   background-color: #161616; }
 
 /*MEDIA QUERIES*/
-@media (min-width: 765px) and (max-width: 1000px) {
+@media (min-width: 769px) and (max-width: 1050px) {
   .codigoqr img {
-    width: 350px;
-    height: 220px; } }
+    width: 280px;
+    height: 180px;
+    padding-right: 20px; }
+  .peluqueria img {
+    width: 50px;
+    height: 40px; } }
 
-@media (min-width: 633px) and (max-width: 764px) {
+@media (min-width: 633px) and (max-width: 768px) {
+  .codigoqr img {
+    width: 280px;
+    height: 180px;
+    padding-bottom: 20px; }
+  .background1 {
+    height: 1100px; }
   p:first-child {
     font-size: 25px; }
-  .background1 {
-    height: 850px; } }
+  .servicios {
+    padding-top: 15px; } }
 
-@media (min-width: 401px) and (max-width: 632px) {
+@media (min-width: 416px) and (max-width: 632px) {
+  .codigoqr img {
+    width: 280px;
+    height: 180px;
+    padding-bottom: 20px; }
   p:first-child {
     font-size: 16px; }
   .background1 {
-    height: 850px; } }
+    height: 1200px; }
+  .servicios {
+    padding-top: 15px; } }
 
-@media (min-width: 321px) and (max-width: 400px) {
+@media (min-width: 356px) and (max-width: 415px) {
+  .codigoqr img {
+    width: 280px;
+    height: 180px;
+    padding-bottom: 20px; }
   p:first-child {
     font-size: 14px; }
   .background1 {
-    height: 850px; }
+    height: 1270px; }
   .codigoqr img {
     width: 300px;
-    height: 200px; } }
+    height: 200px;
+    padding-bottom: 20px; } }
 
-@media (max-width: 320px) {
+@media (min-width: 336px) and (max-width: 355px) {
   .codigoqr img {
     width: 250px;
-    height: 150px; } }
+    height: 150px;
+    padding-bottom: 20px; }
+  .background1 {
+    height: 1400px; } }
+
+@media (max-width: 335px) {
+  .background1 {
+    height: 1500px; }
+  .codigoqr img {
+    width: 200px;
+    height: 120px;
+    padding-bottom: 20px; } }
